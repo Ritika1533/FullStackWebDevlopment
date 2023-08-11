@@ -1,0 +1,118 @@
+* {
+    color: rgb(11, 65, 11);
+    background-color: #f5efef;
+}
+
+button {
+    background-color: white;
+}
+
+h1,
+h2 {
+    color: rgb(32, 3, 32);
+}
+
+a {
+    color: rgb(29, 15, 18);
+}
+
+#v2 {
+    color: rgb(10, 94, 97);
+    background-color: rgb(84, 150, 84);
+
+}
+
+.tag {
+    color: #f31a0a;
+}
+
+
+li a {
+    color: chartreuse;
+
+
+}
+
+.tag a {
+    color: rgb(240, 227, 227);
+}
+
+input+button {
+    background: black;
+}
+
+h2+button {
+    background-color: magenta;
+}
+
+input[type="password"] {
+    color: rgb(167, 201, 16);
+}
+
+input[type="search"] {
+    color: rgb(201, 16, 145);
+}
+
+a[href*="google"] {
+    color: indigo;
+}
+
+a[href="https://en.wikipedia.org/wiki/Health_care"] {
+    columns: rgb(25, 168, 12);
+}
+
+section.jii {
+    color: purple;
+}
+
+button:hover {
+    background-color: hotpink;
+}
+
+a:hover {
+    color: yellow;
+
+}
+
+h2:hover {
+    color: green;
+    text-decoration: underline;
+}
+
+p:hover {
+    background-color: blue;
+}
+
+
+option:checked {
+    box-shadow: 0 0 0 3px orange;
+    color: red;
+}
+
+input[type="radio"]:checked {
+    box-sizing: border-box;
+
+}
+
+h2:nth-of-type(2n) {
+    color: #f31a0a;
+
+}
+
+p:nth-of-type(2n) {
+    color: brown;
+}
+
+h2::first-letter {
+    color: orange;
+
+}
+
+p::first-line {
+    font-weight: bold;
+    color: greenyellow;
+}
+
+h1::selection {
+    color: aqua;
+}

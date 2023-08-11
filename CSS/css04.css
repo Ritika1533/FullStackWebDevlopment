@@ -1,0 +1,25 @@
+body {
+    color: violet;
+}
+
+section {
+    color: coral;
+}
+
+span {
+    color: green
+}
+
+h1 {
+    color: rgb(233, 111, 135);
+    font-style: italic;
+}
+
+/*form {
+    color: chartreuse;
+}*/
+
+button,
+input {
+    color: inherit;
+}

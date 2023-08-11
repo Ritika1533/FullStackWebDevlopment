@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--the only title -->
+    <title>form demo</title>
+</head>
+
+<body>
+
+    <h1>CREATE ACCOUNT</h1>
+    <!-- here button is outdide the form that's why will not be submitted-->
+
+    <button>click</button>
+
+    <!--form action is going to tell where the form will be submitted-->
+
+    <form action="/tacos">
+
+        <!-- button is having attributr type if it's attributr is submit form will be submitted if button form will not submitted used to not submit form-->
+
+        <button type="button"> please do not submit</button>
+        <button type="submit"> please do not submit</button>
+
+        <!-- lable is used to inter-connect the message display and the button (for and id used )-->
+
+        <p>
+            <label> Enter your name:
+                <input type="text" placeholder="name" name="useneme">
+            </label>
+        </p>
+
+        <!--input is used to make button and placeholder will display message inside button-->
+
+        <p>
+            <label for="password"> enter password</label>
+            <input type="password" placeholder="password" id="password" name="password">
+        </p>
+
+        <!--NAME REPRESENT WHAT IS GOING TO BE SEND TO THE SERVER file:///C:/tacos?useneme=rit&password=hii&date=2023-07-07&date=yut%40gmail.com&hidden=&mnth=2023-
+            06&n0.=9&tel=9088987787&co=%23441d1d thi is going to server-->
+
+        <p>
+            <label for="dat"> enter date</label>
+            <input type="date" placeholder="date" id="dat" name="date">
+        </p>
+
+        <p>
+
+            <label for="email"> enter email</label>
+            <input type="email" placeholder="email" id="email" name="date">
+        </p>
+
+        <p>
+            <label>hidden content
+                <input type="hidden" placeholder="hidden" name="hidden">
+            </label>
+        </p>
+
+        <p>
+            <label>enter month
+                <input type="month" placeholder="month" name="mnth">
+            </label>
+        </p>
+
+        <p>
+            <label>enter no.
+                <input type="number" placeholder="number" name="n0.">
+            </label>
+        </p>
+
+        <!-- input type  can also  be used to submit form -->
+
+        <p>
+            <label>
+                submit: <input type="submit" placeholder="submit" name="submit">
+            </label>
+        </p>
+
+        <p>
+            <label>enter number:
+                <input type="tel" placeholder="tel" name="tel">
+            </label>
+        </p>
+
+        <p>
+            <label>enter no.:
+                <input type="number" placeholder="number" name="no." min="5" max="100" step="10">
+            </label>
+        </p>
+
+        <p>
+            <label for="co"> house</label>
+            <input type="color" placeholder="color" id="co" name="co">
+        </p>
+
+        <p>
+            <!-- button is used here to submit form-->
+            <button>submit</button>
+        </p>
+
+        <hr>
+    </form>
+
+    <form action="https://www.google.com/search">
+        <input type="text" name="q">
+        <button>google search </button>
+    </form>
+    <form action="https://www.youtube.com/results">
+        <input type="text" name="search_query">
+        <button>youtube search</button>
+    </form>
+    <!-- how to use checkboxes-->
+
+    <form action="/search">
+        <p>
+            <input type="checkbox" name="checkboxe" id="checkbox">
+            <label for="checkbox"> checked all the terms and condition</label>
+        </p>
+        SELECT SIZE
+        <!-- here value represent what is going to be send to the server because name i s same for all to give user option to select one-->
+        <p>
+
+            <label for="XS">XS</label>
+            <input type="radio" name="radio" id="XS" value="xs">
+            <label for="S">S</label>
+            <input type="radio" name="radio" id="S" value="s">
+            <label for="M">M</label>
+            <input type="radio" name="radio" id="M" value="m">
+
+        </p>
+        <label for="meal">please secect your meal</label>
+        <select name=" meal" id="meal">
+            <option value="chicken">chicken</option>
+            <option value="meat">meat</option>
+            <option value="egg">egg</option>
+            <option value="paneer" selected>paneer</option>
+        </select>
+
+        <p>
+            <label for="guest">no of guest</label>
+            <input type="range" name="guest" id="guest" min="1" max="5" value="3">
+        </p>
+        <p>
+            <label for="c"> Any special request?</label>
+            <br>
+            <textarea id="c" rows="3" cols="30" name="request" placeholder="any message or request"></textarea>
+        </p>
+        </p>
+        <p>
+            <button>submit</button>
+        </p>
+    </form>
+    <<h2>validation</h2>
+        <form action="/radin">
+            <input type="text" id="nam " name="nam" required minlength="5" maxlength="10">
+            <label for="nam">username</label>
+            <button>submit</button>
+        </form>
+
+</body>
+
+</html>

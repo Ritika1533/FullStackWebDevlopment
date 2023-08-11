@@ -1,0 +1,54 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+#container {
+    background-color: #003049;
+    width: 90%;
+    height: 500px;
+    margin: 0 auto;
+    border: 5px solid #003049;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: baseline;
+    flex-wrap: wrap;
+    align-content: center;
+    gap: 10px;
+
+}
+
+#container div {
+    width: 100px;
+    height: 100px;
+    flex-basis: 30%;
+}
+
+#container #one {
+    height: 100px;
+    width: 100px;
+    /*flex-basis: 30%;*/
+
+}
+
+#container #three {
+    /*
+    flex-grow: 2;
+    flex-shrink: 2;*/
+    /*flex-basis: 60%;*/
+    flex: 0 10 30%;
+}
+
+#container #five {
+    flex-shrink: 0;
+}
+
+#container #four {
+    /*  flex-shrink: 3;
+    flex-grow: 1;*/
+
+}
