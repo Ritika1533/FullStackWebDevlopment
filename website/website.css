@@ -1,0 +1,17 @@
+.container {
+    background-image: url('https://img.freepik.com/free-photo/beautiful-view-greenery-bridge-forest-perfect-background_181624-17827.jpg?w=2000');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    /* Adjust the height as needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    background-color: rgba(255, 255, 255, 0.8);
+    /* Add a semi-transparent background color for better readability */
+    padding: 20px;
+    text-align: center;
+}
