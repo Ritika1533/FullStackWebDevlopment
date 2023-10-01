@@ -1,0 +1,22 @@
+section {
+    width: 500px;
+    height: 500px;
+    background-color: magenta;
+}
+
+/*
+0=black and 1= transparent means white in this only backgound impact is visible not text is transparent */
+#rgba {
+    width: 50%;
+    height: 50%;
+    background-color: rgba(106, 37, 37, 0.7);
+    /*once check the rgba hex code #6a2525ba here ba is for transperancy */
+}
+
+/*in this 1=black and 0=transparent here all text button every thing is transparent thats the difference btw alpha channerl and opacity*/
+#obacity {
+    width: 50%;
+    height: 50%;
+    background-color: yellow;
+    opacity: 0.5;
+}

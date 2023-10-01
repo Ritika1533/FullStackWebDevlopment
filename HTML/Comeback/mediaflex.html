@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: row;
+            background-color: olivedrab;
+            border: 2px solid black;
+            margin: 10px;
+            width: 250px;
+        }
+
+        #boxleft {
+            border: 2px solid gray;
+            background-color: rgb(240, 143, 219);
+            width: 100px;
+            display: flex;
+            flex-direction: column;
+            margin: 5px;
+            padding: 5px;
+
+        }
+
+        #boxright {
+            background-color: blueviolet;
+            border: 2px solid rgb(139, 28, 28);
+            margin: 5px;
+            padding: 5px;
+        }
+
+        p {
+            border: 2px solid rgb(93, 21, 209);
+        }
+
+        @media(max-width:640px) {
+            .container {
+                flex-direction: column;
+                width: 125px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div id="boxleft">
+            <p>text1</p>
+            <p>text2</p>
+        </div>
+        <div id="boxright">
+            <img src="greece.jpg" width="100px" height="100px" alt="pic">
+        </div>
+    </div>
+</body>
+
+</html>

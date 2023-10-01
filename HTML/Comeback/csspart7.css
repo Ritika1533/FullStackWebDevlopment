@@ -1,0 +1,38 @@
+div {
+    width: 100px;
+    height: 100px;
+    background-color: #3d405b;
+    border: 2px solid black;
+    margin: 10px;
+    display: inline-block;
+}
+
+#middle {
+    background-color: #81b29a;
+}
+
+#static #middle {
+    position: static;
+    top: 100px;
+    /* no changes will be applied*/
+}
+
+#relative #middle {
+    position: relative;
+    top: 50px;
+    left: -30px;
+    /*will be emoved form doccument and space will be left for him*/
+}
+
+#absolute #middle {
+    position: absolute;
+    /*will be removed from doccument and space will be not left for him and will move relative to bodt or we can say to parent*/
+}
+
+#fixed #middle {
+    position: fixed;
+    top: 50px;
+    bottom: 59px;
+    left: 600px;
+    /*it is going to stay where we set permanently while we scroll the page it is not going to scroll with page*/
+}

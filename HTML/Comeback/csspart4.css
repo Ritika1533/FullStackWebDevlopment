@@ -1,0 +1,9 @@
+h1 {
+    background-color: palegoldenrod;
+    display: inline;
+}
+
+span {
+    background-color: blueviolet;
+    display: block;
+}

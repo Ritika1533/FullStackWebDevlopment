@@ -1,0 +1,33 @@
+h2 {
+    color: #03045e;
+    text-decoration: underline;
+}
+
+h3 {
+    color: #023e8a;
+    text-decoration: overline;
+}
+
+h1 {
+    color: #7209b7;
+    text-align: center;
+    font-weight: 900;
+    text-decoration: overline;
+    font-size: xx-large;
+}
+
+body {
+    background-color: #e2fdff;
+    line-height: 2;
+    letter-spacing: 0.0002cm;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    font-family: 'Segoe UI', Futura, Arial, sans-serif;
+    /*if our system don't have segoe ui then futura willimplement if futura is also not there then arial will implement and 
+    last one is for backup*/
+}

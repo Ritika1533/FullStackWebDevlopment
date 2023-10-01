@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo form</title>
+</head>
+
+<body>
+    <h1>FORM</h1>
+    <form action="/tacos">
+        <p>
+            <label for="name">Enter your name:</label>
+            <input type="text" id="name" placeholder="username" name="username" required minlength="3" maxlength="30">
+        </p>
+        <p>
+            <label for="password">Enter password</label>
+            <input type="password" id="password" placeholder="password" name="pass" required>
+        </p>
+        <button type="button">will not submit</button>
+        <p>
+            <label for="email">Enter email</label>
+            <input type="email" id="email" placeholder="email" name="email" required>
+        </p>
+        <p>
+            <label for="dob">Date Of birth</label>
+            <input type="date" id="dob" placeholder="date of birth" name="dob">
+        </p>
+        <button type="submit" style="color: blueviolet; background-color: brown;">Submit</button>
+        <input type="submit" value="clickme!">
+        <!--file:///C:/tacos?username=9693449459&pass=xcf&email=ritikakes%4033gmail.com&dob=2023-09-07-->
+
+        <!--*****************************************************************************************************************-->
+
+    </form>
+    <hr>
+
+    <h2>Search firefox</h2>
+    <form action="https://www.google.com/search">
+        <input type="text" name="q">
+        <button>search firefox</button>
+    </form>
+    <h2>Search google</h2>
+    <form action="https://www.google.com/search">
+        <input type="text" name="q">
+        <button>Google here</button>
+    </form>
+    <h2>Search youtube</h2>
+    <form action="https://www.youtube.com/results">
+        <input type="text" name="search_query">
+        <button>Youtube search</button>
+    </form>
+
+    <!--*******************************************************************************************************************-->
+    <hr>
+    <h2>More Input</h2>
+    <form action="/bird">
+        <input type="checkbox" id="checkbox" name="agree" checked>
+        <label for="checkbox">Yes,I have checked all the terms and condition</label>
+
+        <p>Select your preference City</p>
+        <div>
+            <input type="radio" name="city" id="bang" value="banglore">
+            <label for="bang">Banglore</label> <br>
+            <input type="radio" name="city" id="del" val="delhi">
+            <label for="del">Delhi</label><br>
+            <input type="radio" name="city" id="kol" value="kolkata">
+            <label for="kol">Kolkata</label>
+        </div>
+        <div>
+            <label for="sel">Please select your meal</label>
+            <select name="food" id="sel">
+                <option value="select">Select your meal</option>
+                <option value="paneer">Paneer</option>
+                <option value="chicken">Chicken</option>
+                <option value="egg">Egg Curry</option>
+                <option value="mutton">Mutton</option>
+            </select>
+        </div>
+        <div>
+            <label for="range">years of experience</label>
+            <input type="range" name="expeirience" id="range" min="1" max="10" step="1">
+        </div>
+        <!--file:///C:/bird?agree=on&city=banglore&food=chicken&expeirience=3-->
+
+        <div>
+            <label for="textarea">Tell about yourself</label>
+            <textarea name="yourself" id="textarea" cols="10" rows="1" placeholder="yourself">I am</textarea>
+        </div>
+        <button>Submit</button>
+    </form>
+</body>
+
+</html>
