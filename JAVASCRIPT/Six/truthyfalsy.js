@@ -1,10 +1,10 @@
-const username = prompt("enter your username");
+const password = prompt("enter your password");
 
 if (username) {
     console.log("TRUTHY");
 }
 else {
-    console.log("FALSY")
+    console.log("FALSY");
 }
 //if username is there then truthy else falsy
 if (0) {
@@ -20,18 +20,18 @@ if (false) {
 else {
     console.log("FALSY")
 }
-//falsy
+//falsy is always falsy so it will print falssy
 if (null) {
     console.log("TRUTHY");
 }
 else {
     console.log("FALSY")
 }
-//it is also falsy
+//it comes under falsy so it will print  falsy
 if (NaN) {
     console.log("TRUTHY");
 }
 else {
     console.log("FALSY")
 }
-//it is also falsy
+//it comes under falsy so it will print  falsy

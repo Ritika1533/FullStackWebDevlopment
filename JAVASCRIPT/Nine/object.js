@@ -9,12 +9,12 @@ let product = {
 
 
 //we can access any element like
-confirm.log(product.inStock);     //or product['inStock']
+console.log(product.inStock);     //or product['inStock'] true
 
 
 //we can modify the things like this
 product.price = 2.99;   //or product['price']=2.99
-confirm.log(product);
+console.log(product);
 //{name: 'Gummy Bears', inStock: true, price: 2.99, flavors: Array(3), review: 'must buy excellent'}
 
 //we can also add new element

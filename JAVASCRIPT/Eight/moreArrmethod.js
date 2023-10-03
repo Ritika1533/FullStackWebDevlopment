@@ -2,7 +2,7 @@ let a1 = [1, 2, 3];
 let a2 = [4, 5, 6];
 let a3 = a1.concat(a2);
 console.log(a3);
-//1 2 3 4 5 6
+//[1, 2, 3, 4, 5, 6]
 console.log(a3.includes(10));//false
 console.log(a2.indexOf(5));//1
 console.log(a3.indexOf(10));//-1(because not present)
@@ -16,3 +16,14 @@ let a7 = [9, 8, 7, 5, 4, 1];
 console.log(a7.splice(2, 3, '81', '99'));
 console.log(a7.splice(2, 1));
 
+//NESTED ARRAY
+
+let array1 = [["o", "null", "x"], ["null", "x", "o"], ["x", "o", "null"]];
+console.log(array1);
+//
+//(3) [Array(3), Array(3), Array(3)]
+//ROW 0  ['o', 'null', 'x']
+//ROW 1 ['null', 'x', 'o']
+//ROW 2 ['x', 'o', 'null']
+console.log(array1[0][2]);
+//x
