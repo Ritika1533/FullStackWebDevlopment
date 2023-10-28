@@ -4,7 +4,8 @@ body {
 }
 
 h1 {
-    color: olive
+    color: olive;
+    border: 2px solid yellowgreen;
 }
 
 .purple {

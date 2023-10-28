@@ -37,3 +37,4 @@ movie.filter(n => (n.year > 2000)).map((n) => (n.name));
 // ['jab we meet', 'fanna', 'rocly and rani']
 movie.filter(n => n.year > 2000).map((n) => n.name);
 // ['jab we meet', 'fanna', 'rocly and rani']
+
