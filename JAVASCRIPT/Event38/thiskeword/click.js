@@ -1,0 +1,29 @@
+const makeRandColor = function () {
+    const r = Math.floor(Math.random() * 255);
+    const g = Math.floor(Math.random() * 255);
+    const b = Math.floor(Math.random() * 255);
+    return `rgb(${r},${g},${b})`;
+}
+const buttons = document.querySelectorAll('button');
+for (let button of buttons) {
+    button.addEventListener('click', function () {
+        button.style.backgroundColor = makeRandColor();
+        button.style.color = makeRandColor();
+    })
+}
+
+const h1s = document.querySelectorAll('h1');
+for (let h1 of h1s) {
+    // h1.addEventListener('click', function () {
+    //-=  console.log(this)
+    //   this.style.backgroundColor = makeRandColor();
+    // this.style.color = makeRandColor();
+    h1.addEventListener('click', colorize);
+}
+
+//not to epeat the code we can do this
+
+function colorize() {
+    this.style.backgroundColor = makeRandColor();
+    this.style.color = makeRandColor();
+}
