@@ -10,4 +10,5 @@ form.addEventListener('submit', function (e) {
     console.log(newLi);
     list.append(newLi);
     input.value = "";
+
 })
