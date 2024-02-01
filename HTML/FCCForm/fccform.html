@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>FORM</title>
+    <link rel="stylesheet" href="fccform.css">
+
+</head>
+
+<body>
+    <div id="start">
+        <h1 id="title">freeCodeCamp Survey Form</h1>
+        <p id="description">Thank you for taking the time to help us improve the platform</p>
+        <hr>
+
+        <form action="https://register-demo.freecodecamp.org" id="survey-form">
+
+            <div id="one">
+                <label id="name-label" for="name">Name
+                    <input type="text" id="name" placeholder=" Enter your name" required>
+                </label>
+                <label id="email-label" for="email">Email
+                    <input type="email" id="email" placeholder="Enter your email" required>
+                </label>
+                <label id="number-label" for="age">Age(optional)
+                    <input type="number" placeholder="Enter your age" id="age" min="13" max="80">
+                </label>
+                <label>Would you recommend freeCodeCamp to a friend?<select id="dropdown"
+                        placeholder="select current role">
+                        <option>student</option>
+                        <option>full time job</option>
+                        <option>full time learner</option>
+                        <option>prefer not to say</option>
+                        <option>other</option>
+                    </select>
+                </label>
+            </div>
+            <div id="two">
+
+                <p> What would you like to see improved? (Check all that apply)</p>
+                <input type="checkbox" value="bb">
+                <label id="c">Back-end Projects</label>
+                <br>
+                <input type="checkbox" value="cc">
+                <label id="c">Data Visualization</label>
+                <br>
+
+                <input type="checkbox" value="ff">
+                <label id="c">Gitter help
+                    rooms</label>
+                <br>
+                <input type="checkbox" value="gg">
+                <label id="c">Videos</label>
+                <br>
+
+                <p>Would you recommend freeCodeCamp to a friend?</p>
+
+                <input id="a" type="radio" value="Definitely" name="radio"><label>Definitely</label><br>
+                <input id="a" type="radio" value="Maybe" name="radio"><label>Maybe</label><br>
+                <input id="a" type="radio" value="notsure" name="radio"><label>not
+                    sure</label><br>
+
+
+
+                <label>What is your favorite feature of freeCodeCamp?
+                    <select id="favorite">
+                        <option value="1" checked>select an option
+                        </option>
+                        <option value="2">challanges</option>
+                        <option value="3">project</option>
+                        <option value="4">community</option>
+                        <option value="5">open sources</option>
+                        </secect>
+                </label>
+
+
+                <input type="submit" id="submit">
+        </form>
+        <hr>
+    </div>
+
+
+</body>
+
+</html>

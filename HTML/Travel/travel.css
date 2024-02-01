@@ -1,0 +1,341 @@
+/* global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*for horizantal scrolling*/
+body,
+html {
+    overflow-x: hidden;
+}
+
+.header-content {
+
+    width: 100vw;
+    height: 100vh;
+    background-image: url(https://mythsandmountains.com/wp-content/uploads/2018/09/myths-and-mountains-intro-slide3-1.jpg);
+    background-position: bottom;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.head {
+    color: white;
+    margin-bottom: 130px;
+    text-align: center;
+    font-size: larger;
+}
+
+.head h2 {
+    margin-bottom: 15px;
+}
+
+.line {
+    width: 150px;
+    height: 4px;
+    background: #fc036b;
+    margin: 10px auto;
+}
+
+.head h1 {
+    margin-top: 30px;
+}
+
+a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.nav-link li {
+    margin: 0 10px;
+
+}
+
+.nav-link {
+    list-style: none;
+    display: flex;
+    /*justify-content: space-around;*/
+    align-items: center;
+}
+
+
+.btn {
+
+    background-color: #fc036b;
+    padding: 10px 15px;
+    border-radius: 20px;
+    border: 1px solid #fc036b;
+    margin: 10px 0;
+    color: white;
+}
+
+.navbar {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+@media(max-width:950px) {
+    .navbar {
+        padding: 0;
+        display: block;
+    }
+
+    .logo {
+        position: absolute;
+        top: 30px;
+        left: 5px;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+
+
+}
+
+@media(max-width:534px) {
+    .nav-link {
+        display: block;
+    }
+
+    .nav-link li {
+        margin: 2px 0;
+    }
+
+    h2 {
+        font-weight: 400;
+        font-size: small;
+    }
+
+    h1 {
+        font-weight: 600;
+        font-size: medium;
+    }
+
+    .logo {
+        position: absolute;
+        top: 110px;
+        left: 0px;
+        height: 30px;
+        width: 30px;
+    }
+
+    .btn {
+        padding: 0;
+        font-size: 10px;
+
+    }
+
+    .image {
+        width: 300px;
+        height: 300px;
+        margin-left: 45px;
+    }
+
+    .heading {
+        margin-top: 10px;
+    }
+
+    p {
+        font-style: normal;
+    }
+
+
+
+
+}
+
+/*second page*/
+.heading {
+    text-align: center;
+    color: #264653;
+    font-size: 30px;
+    margin-top: 50px;
+    font-style: italic;
+}
+
+p {
+    font-style: italic;
+    font-weight: 500;
+    color: #264653;
+    text-align: center;
+    padding: 5px 10px;
+}
+
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 50px;
+
+}
+
+.row column {
+    width: 80%;
+    display: flex;
+}
+
+h3 {
+    text-align: center;
+    color: #264653;
+    margin: 12px 0px;
+}
+
+.ctn {
+    background-color: #a2d2ff;
+    padding: 10px 18px;
+    border-radius: 20px;
+    border: 1px solid #a2d2ff;
+    margin: 20px 155px;
+}
+
+/*third page */
+.explore {
+    width: 100%;
+    height: 100vh;
+    background-image: url("https://as2.ftcdn.net/v2/jpg/01/77/42/01/1000_F_177420102_5IWDfwHbwhBwJoZfW5QkmfAhLxB0wLRr.jpg");
+    background-size: cover;
+    background-position: center;
+    margin: 20px 0;
+    display: flex;
+
+}
+
+.explore-content {
+    margin: 220px 0 0 10px;
+}
+
+.explore-content h1 {
+    margin-left: 79px;
+    color: #264653;
+    font-size: 30px;
+}
+
+.explore-content p {
+    font-size: 20px;
+    font-style: unset;
+}
+
+.explore-content .btn {
+    margin-top: 15px;
+    margin-left: 190px;
+    padding: 8px 15px;
+}
+
+/*forth page*/
+.tour {
+    margin: 80px 10px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.row .image-col {
+    width: 60%;
+
+}
+
+.row .content-col {
+    width: 40%;
+
+}
+
+.row .content-col h1 {
+    font-size: 40px;
+    margin-left: 120px;
+    color: #264653;
+}
+
+
+.row .content-col .line {
+    margin: 15px 120px;
+    width: 75px;
+}
+
+.row .content-col .btn {
+    margin: 15px 121px;
+}
+
+.row .content-col p {
+    text-align: unset;
+    margin-left: 120px;
+    font-style: unset;
+}
+
+.tour .image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+}
+
+.image-gallery img {
+    margin: 10px;
+    width: 250px;
+
+}
+
+/*FOOTER*/
+.foooter {
+    background-color: black;
+    height: 30vh;
+    width: 100%;
+    padding: 30px 80px;
+}
+
+.foooter p {
+    color: white;
+    margin-top: 20px;
+
+}
+
+/*animation and hover*/
+img {
+    transition: transform .3s ease;
+}
+
+img:hover {
+    transform: scale(1.1);
+}
+
+button {
+    background: none;
+    color: #ffa260;
+    border: 2px solid;
+    padding: 2em 4em;
+    font-size: 1em;
+    transition: color 0.25, boder-color .25, box-shadow .25, transform 0.25;
+}
+
+button:hover {
+    border-color: #e6e0e2;
+    color: #e9f1e1;
+    box-shadow: 0 0.5em 0.5em -0.4em #d35b93;
+    transform: translateY(-.25em);
+    border-radius: 40px;
+}
+
+.row .content-col h1:hover {
+    color: #da627d;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: white;
+
+}
