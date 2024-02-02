@@ -62,3 +62,14 @@ let filterArray = newArray.filter((val) => {
     return val > 1;
 });
 console.log(filterArray);
+//every
+let score = [67, 99, 78, 90, 45, 88];
+let ans = score.every((val) => {
+    val >= 50;
+});
+console.log(ans);
+//some
+let ans2 = score.some((val) => {
+    return val > 0;
+});
+console.log(ans2);
