@@ -53,29 +53,3 @@ btn.addEventListener("click", async (evt) => {
     let finalAmt = amtVal * rate;
     msg.innerText = `${amtVal} ${fromCurr.value} = ${finalAmt} ${toCurr.value}`;
 });
-const inputBtn=document.querySelector(".age-dob-input");
-const calculateBtn=document.querySelector(".Calculate-btn");
-const ageResult=document.querySelector(".age-result");
-const btnYear=document.querySelector(".btn-year");
-calculateBtn.addEventListener("click",()=>{
-    if(inputBtn.value==""){
-        alert("Please enter your age");
-    }else{
-        console.log(inputBtn.value);
-        const dob=new Date(inputBtn.value);
-        console.log(dob);
-        const dobYear= dob.getFullYear();
-        console.log(dobYear);
-        const dobMonth=dob.getMonth();
-        //current year
-        const today=new Date();
-        console.log(today);
-        const nowYear=today.getFullYear();
-        const nowMonth=today.getMonth();
-        const month=nowMonth-dobMonth;
-        const year=nowYear-dobYear;
-        console.log(year);
-        btnYear.innerText=`${year} year`;
-
-    }
-});
