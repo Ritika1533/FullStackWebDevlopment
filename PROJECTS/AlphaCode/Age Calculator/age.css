@@ -1,0 +1,64 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    background-color: blueviolet;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.age-container{
+    background-color: #9290C3;
+    padding:2rem 3rem;
+    text-align: center;
+    height:290px;
+    box-shadow: 0 0 20px black;
+    border-radius: 2rem;
+}
+.age-header{
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 1rem;
+   
+}
+label{
+    display:block;
+    font-size: 1.2rem;
+    margin-bottom: .8rem;
+    font-weight: 700;
+}
+input{
+   width:13rem;
+   height: 2rem;
+   border-radius: .6rem;
+   font-size: 1.1rem;
+   padding: .6rem;
+   border: none;
+   margin-bottom: .9rem;
+   outline: none;
+}
+.Calculate-btn{
+    border-radius: .6rem;
+    border: none;
+    width:12.5rem;
+    height: 2rem;
+    margin-bottom: 5px;
+    background-color: black;
+    color: white;
+    font-size: 1rem;  
+}
+
+
+ .btn-year,.btn-month,.btn-day{
+    height: 44px;
+    width: 45px;
+    border-radius: 10px;
+    border: none;
+    margin: 5px 9px 5px 9px;
+    font-size: 9px;
+}
+
+  
