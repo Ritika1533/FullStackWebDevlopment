@@ -13,7 +13,10 @@ export default function Header() {
     <div>
       <Container position='static'>
         <Toolbar>
-        <img src={logo} alt="Logo" style={{ width: 40 }} />
+          
+           <img src={logo} alt="Logo" style={{ width: 40 }} />
+          
+          
         </Toolbar>
       </Container>
 
