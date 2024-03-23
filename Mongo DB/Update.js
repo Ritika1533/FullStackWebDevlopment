@@ -117,5 +117,5 @@ employee> db.inventory.find({qty : {$lt : 50}})
     status: 'P',
     lastModified: ISODate('2024-03-22T17:00:58.661Z')
   }
-]
+]y6u
  */

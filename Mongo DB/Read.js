@@ -92,4 +92,51 @@ employee> db.inventory.find( { status: "A", qty: 50  } )
     status: 'A'
   }
 ]
-*/ 
+*/
+db.inventory.find( { status: "A", qty: { $lt: 30 } } ) 
+/*
+employee> db.inventory.find( { status: "A", qty: { $lt: 30 } } )
+[
+  {
+    _id: ObjectId('65fda34ba19d0c0961d14a14'),
+    item: 'journal',
+    qty: 25,
+    size: { h: 14, w: 21, uom: 'cm' },
+    status: 'A'
+  }
+]
+ */
+
+//OR
+db.inventory.find( { $or: [ { status: "A" }, { qty: { $lt: 30 } } ] } )
+/* employee> db.inventory.find( { $or: [ { status: "A" }, { qty: { $lt: 30 } } ] } )
+[
+  {
+    _id: ObjectId('65fda34ba19d0c0961d14a14'),
+    item: 'journal',
+    qty: 25,
+    size: { h: 14, w: 21, uom: 'cm' },
+    status: 'A'
+  },
+  {
+    _id: ObjectId('65fda34ba19d0c0961d14a15'),
+    item: 'notebook',
+    qty: 50,
+    size: { h: 8.5, w: 11, uom: 'in' },
+    status: 'A'
+  },
+  {
+    _id: ObjectId('65fda34ba19d0c0961d14a17'),
+    item: 'planner',
+    qty: 7,
+    size: { h: 22.85, w: 30, uom: 'cm' },
+    status: 'D'
+  },
+  {
+    _id: ObjectId('65fda34ba19d0c0961d14a18'),
+    item: 'postcard',
+    qty: 45,
+    size: { h: 10, w: 15.25, uom: 'cm' },
+    status: 'A'
+  }
+] */
