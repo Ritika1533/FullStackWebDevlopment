@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<style>
+			body {
+				background-color: #ececec;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+			#main {
+				border: 2px solid grey;
+				padding: 20px 40px;
+			}
+			form {
+				display: flex;
+				flex-direction: column;
+			}
+			input {
+				margin: 0.5rem 0rem;
+				outline: none;
+			}
+			#radio {
+				margin: 0.5rem 0rem;
+			}
+			#checkbox #box {
+				margin: 0.5rem 0rem;
+			}
+			button {
+				margin: 0.7rem 0rem;
+				padding: 4px;
+				border: 1px solid black;
+				border-radius: 4px;
+				background-color: cornflowerblue;
+				font-size: small;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="main">
+			<h1>REGISTRATION FORM</h1>
+			<form action="#ritika">
+				<label for="fullname">Name</label>
+				<input type="text" name="fullname" id="fullname" placeholder="Name" />
+				<label for="password">password</label>
+				<input
+					type="password"
+					name="password"
+					id="password"
+					placeholder="password"
+				/>
+				<label for="email">Email</label>
+				<input type="email" name="email" id="email" />
+				<label for="phone">Phone</label>
+				<input type="phone" name="phone" id="phone" placeholder="phone" />
+
+				<div id="radio">
+					sex
+					<input type="radio" name="sex" value="male" id="male" />
+					<label for="male">male</label>
+
+					<input type="radio" name="sex" value="female" id="female" />
+					<label for="female">female</label>
+
+					<input type="radio" name="sex" value="other" id="other" />
+					<label for="other">other</label>
+				</div>
+				<label for="date">DOB</label>
+				<input type="date" name="date" id="date" />
+				<div id="checkbox">
+					<p>select your language</p>
+					<label for="english">English</label>
+					<input type="checkbox" name="english" id="box" />
+					<label for="hindi">Hindi</label>
+					<input type="checkbox" name="hindi" id="box" />
+					<label for="bangali">Bangali</label>
+					<input type="checkbox" name="Bangali" id="box" />
+				</div>
+				<button id="submit">Submit</button>
+			</form>
+		</div>
+	</body>
+</html>
