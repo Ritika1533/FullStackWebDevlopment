@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h2 style="text-align: center;">HTML Table with Various Attributes</h2>
+    
+    <table cellpadding="5" cellspacing="2">
+        <thead>
+            <tr>
+                <th colspan="4">Table Header</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="left-align" rowspan="2">Rowspan Example</td>
+                <td>Column 1</td>
+                <td class="top-align" rowspan="2">Top Align</td>
+                <td>Column 3</td>
+            </tr>
+            <tr>
+                <td class="right-align">Right Align</td>
+                <td class="bottom-align">Bottom Align</td>
+            </tr>
+            <tr>
+                <td colspan="2">Colspan Example</td>
+                <td colspan="2">
+                    <table cellpadding="3" cellspacing="1">
+                        <tr>
+                            <td>Nested</td>
+                            <td>Table</td>
+                        </tr>
+                        <tr>
+                            <td>Inside</td>
+                            <td>Cell</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="4">Table Footer</td>
+            </tr>
+        </tfoot>
+    </table>
+    
+    </body>
+    </html>
+</html>
