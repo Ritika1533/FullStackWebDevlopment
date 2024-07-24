@@ -1,15 +1,27 @@
 import React from "react";
 import ReactDom from "react-dom";
+import Cards from "./Cards";
+import "./index.css";
 ReactDom.render(
 	<>
-		<h1>NETFLIX</h1> <p>FAV 5 SHOW</p>
-		<ol>
-			<li>Haseena man jaigi</li>
-			<li>Mirzapur</li>
-			<li>Sukkhie</li>
-			<li>Sabnam ka vedio viral</li>
-			<li>Srikanth</li>
-		</ol>
+		<Cards
+			imgsrc="https://picsum.photos/210/300"
+			title="A Netflix original series"
+			sname="Dark"
+			link="https://www.netflix.com/search?q=dark"
+		/>
+		<Cards
+			imgsrc="https://picsum.photos/211/300"
+			title="A Netflix original series"
+			sname="Extra ciriculam"
+			link="https://www.netflix.com/search?q=dark"
+		/>
+		<Cards
+			imgsrc="https://picsum.photos/212/300"
+			title="A Netflix original series"
+			sname="Strange Things"
+			link="https://www.netflix.com/search?q=dark"
+		/>
 	</>,
 	document.getElementById("root")
 );
