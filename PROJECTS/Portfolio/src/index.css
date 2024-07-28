@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: .2rem .4rem ;
+    font-family: "Outfit", sans-serif;
+}
+body{
+    background:black;
+}
+button {
+    background: none;
+    color: #34d0ff;
+    border: 2px solid;
+    padding: 2em 3em;
+    font-size: .5em;
+    border-radius: 10px;
+    transition: color 0.25, boder-color .25, box-shadow .25, transform 0.25;
+}
+
+button:hover {
+    border-color: #f1ff5c;
+    color: #f1ff5c;
+    box-shadow: 0 0.5em 0.5em -0.4em #f1ff5c;
+    transform: translateY(-.25em);
+    border-radius: 40px;
+}

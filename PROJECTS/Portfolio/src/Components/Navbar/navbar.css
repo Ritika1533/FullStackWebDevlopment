@@ -1,0 +1,107 @@
+.header img{
+    height: 3.125rem;
+    width: 3.125rem;
+    border-radius: 50%;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navMenu{
+display: flex;
+}
+.navMenu li{
+    padding: 0 1rem;
+}
+.navMenu li a{
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-decoration: none;
+    color: aliceblue;
+    padding: 3px 12px;
+    position: relative;
+}
+.navMenu li a::before{
+    content: "";
+    width: 15px;
+    height: 15px;
+    position:absolute;
+    left:15px;
+    bottom: 7px;
+    border:5px solid #79043e;
+    border-width: 0 0 2px 2px;
+    transition: all 0.3s;
+    opacity: 0;
+}
+.navMenu li a::after{
+    content: "";
+    width: 15px;
+    height: 15px;
+    position:absolute;
+    top:7px;
+    right: 15px;
+    border:5px solid rgb(121, 4, 62);
+    border-width: 2px 2px 0 0;
+    transition: all 0.3s;
+    opacity: 0;
+}
+.navMenu li a:hover::before{
+    left:-5px;
+    bottom:-5px;
+    opacity: 1;
+}
+.navMenu li a:hover::after{
+    top:-5px;
+    right:-5px;
+    opacity: 1;
+}
+.navMenu li a:hover{
+   
+    color: azure;
+}
+h1,h4,p,a{
+    color: aliceblue;
+    text-decoration: none;
+}
+ul{
+    list-style-type: none;
+}
+.hamburger{
+    display: none;
+} 
+a:hover{
+    color:blue;
+    text-decoration: underline;
+}
+
+@media screen and (max-width:1040px){
+    .navMenu{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+        background:rgb(15, 15, 15) ;
+        position: absolute;
+        top: 0;
+        left: 100%;
+        z-index: -3; 
+        transition: 0.5s; 
+    }
+    .navMenu.active{
+        left: 0;
+    }
+    .navMenu li{
+        padding: 1rem 0;
+    }
+    .navMenu li a {
+        font-size: 2rem;
+    }
+    .hamburger{
+        display: initial;
+    }
+    .hamburger svg:hover {
+        color: #ff0000; /* Change this to your desired hover color */
+      }
+}
