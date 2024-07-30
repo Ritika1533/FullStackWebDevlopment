@@ -1,0 +1,21 @@
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.content {
+  text-align: center;
+}
+.quote{
+  margin:5px 0px ;
+  color: #6b495a;
+  font-style: italic;
+  padding: 8px 3px;
+  font-size:medium;
+}
+h5{
+  color: aliceblue;
+  margin-top: 50px;
+} 
