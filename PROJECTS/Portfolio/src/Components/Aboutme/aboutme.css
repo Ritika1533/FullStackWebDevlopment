@@ -1,0 +1,31 @@
+.aboutme{
+    padding:25px 30px ;
+}
+.about-content{
+    background-color: rgba(117, 226, 150, 0.092);
+    border-radius: 40px;
+    padding: 30px 35px;
+}
+.myself{
+    color: rgb(177, 153, 153);
+    padding: 2px 0px;
+    margin-left: 25px;
+}
+.aboutme .about-content p{
+    margin: 20px;
+    font-weight: 100;
+    color: rgb(177, 153, 153);
+}
+.symbol{
+    margin-right:-5px;
+}
+.line{
+    width: 20%;
+    height:0.1px;
+    border-radius: 60px;
+    margin-left:auto;
+    margin-right: auto;
+    margin-top: 40px;
+    margin-bottom: 60px;
+    background-color: rgb(177, 153, 153);
+}

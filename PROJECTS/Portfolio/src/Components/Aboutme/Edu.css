@@ -1,0 +1,65 @@
+.coitainer-edu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(117, 226, 150, 0.092);
+    border-radius: 40px;
+    padding: 30px 35px;
+    
+    margin: 22px 30px;
+}
+.row{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.col{
+    padding: 10px 50px;
+}
+.col .title{
+    color:  rgb(153, 22, 88);
+    margin-bottom: 20px;
+    
+    padding: 0px 0px 20px 30px;
+}
+.col .contents{
+border-left: 2px solid rgb(30, 90, 55);
+border-top: 20px;
+margin-top: -15px;
+
+}
+.contents .box{
+    position: relative;
+    padding: 20px;
+    border: 1px solid rgba(12, 37, 4, 0.1);
+    margin-left: 20px;
+    cursor: pointer;
+    transition: all 0.4s;
+    border-radius: 30px;
+    margin-bottom: 20px;
+    background-color: rgba(108, 216, 141, 0.092);
+    font-weight: 100;
+    font-style: italic;
+}
+.contents .box:hover{
+    box-shadow: 0px 3px 12px 0px rgba(12, 37, 4, 0.1);
+    background-color: rgba(30, 77, 44, 0.092) ;
+}
+.col .contents .box ::before{
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: rgb(73, 23, 48);
+    right: calc(100% + 18px);
+    top: 0;
+    border: 2px solid transparent;
+    margin-top: -5px;
+}
+.box h3{
+    color: rgb(37, 18, 36);
+}
+.box h4{
+    color: rgb(170, 164, 164);
+    padding: 5px;
+}
