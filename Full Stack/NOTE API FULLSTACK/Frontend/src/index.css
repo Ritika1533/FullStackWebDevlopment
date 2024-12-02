@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    html,body{
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    body {
+        background-color: #b2c78c;
+        overflow-x: hidden;
+        background-image: url("https://images.pexels.com/photos/192136/pexels-photo-192136.jpeg?cs=srgb&dl=pexels-oleksandr-tiupa-53788-192136.jpg&fm=jpg");
+        background-size: cover; 
+        background-position: center; 
+        background-repeat: no-repeat; 
+        opacity: 0.7; 
+        z-index: -1;
+    }
+}
+
+@layer components {
+    .input-box {
+        @apply w-full text-sm bg-lime-800 opacity-75  border-[1.5px] px-5 py-3 rounded mb-4 outline-none text-red-800;
+    }
+
+    .btn-primary {
+        @apply w-full text-sm bg-gray-900 text-white p-2 rounded-full my-2 hover:bg-blue-700;
+    }
+    .icon-btn{
+        @apply text-xl text-slate-300 cursor-pointer  hover:text-[#2b85ff] rotate-45;
+    }
+    .input-label{
+        @apply text-xs text-slate-400;
+    }
+    .btn-color{
+        @apply text-gray-900 bg-gradient-to-r from-teal-200 to-lime-200 hover:bg-gradient-to-l hover:from-teal-200 hover:to-lime-200 focus:ring-4 focus:outline-none focus:ring-lime-200 dark:focus:ring-teal-700 font-normal rounded-lg text-sm px-2 py-1.5 text-center me-2 mb-3
+    }
+    .btn-add{
+        @apply w-12 h-12 mb-4 flex text-[#2B85FF] items-center justify-center rounded-2xl
+        bg-white absolute right-10 bottom-10 transition ease-in-out delay-150 
+         hover:text-black hover:-translate-y-1 hover:scale-110 duration-300
+    }
+}

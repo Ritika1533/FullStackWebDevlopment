@@ -5,8 +5,8 @@ import projectData from "../MyProject/utils";
 function Proj() {
 	return (
 		<div className="portfolio">
-			<div className="header">
-				<h2 className="header-content">My Recent Work</h2>
+			<div className="head">
+				<h1 className="header-content">My Recent Works</h1>
 			</div>
 
 			<div className="procontainer portfolio_container">
@@ -19,9 +19,11 @@ function Proj() {
 							<h3>{item.name}</h3>
 						</div>
 						<div className="portfolio_item-cta">
-							<a href={item.link} target="_blank" rel="noopener noreferrer">
-								Github
-							</a>
+							<button className="res-bt">
+								<a href={item.link} target="_blank" rel="noopener noreferrer">
+									Github
+								</a>
+							</button>
 						</div>
 					</div>
 				))}

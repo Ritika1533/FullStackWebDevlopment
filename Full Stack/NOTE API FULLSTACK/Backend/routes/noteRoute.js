@@ -1,0 +1,14 @@
+import express from "express";
+import { addNote } from "../controller/noteController.js";
+import { editNote } from "../controller/noteController.js";
+import { getAllNotes } from "../controller/noteController.js";
+import { deleteNote } from "../controller/noteController.js";
+import { updateNotePinned } from "../controller/noteController.js";
+import { verifyToken } from "../utils/verifyUser.js";
+const router = express.Router();
+router.post("/add", verifyToken, addNote);
+router.put("/edit/:noteId", verifyToken, editNote);
+router.get("/all", verifyToken, getAllNotes);
+router.delete("/delete/:noteId", verifyToken, deleteNote);
+router.put("/updateNotePinned/:noteId", verifyToken, updateNotePinned);
+export default router;

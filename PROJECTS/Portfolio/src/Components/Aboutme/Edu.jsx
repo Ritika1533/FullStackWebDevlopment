@@ -38,7 +38,6 @@ function Edu() {
 					</div>
 				</div>
 			</div>
-			<hr className="line" />
 		</>
 	);
 }

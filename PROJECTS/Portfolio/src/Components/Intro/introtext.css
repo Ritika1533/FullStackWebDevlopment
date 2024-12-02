@@ -1,21 +1,96 @@
 .hero {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   height: 100vh;
+  margin: 0 20%;
+  margin-top: 7vh;
+  gap: 80px; 
 }
 
+.hero img {
+  width: 300px;
+  height: 330px; 
+  margin: 65px auto 2rem;
+  border-radius: 45%;
+  
+}
 .content {
   text-align: center;
+  width: 50%;
+  margin-left: 40px; 
 }
-.quote{
-  margin:5px 0px ;
-  color: #6b495a;
+
+.quote {
+  margin: 5px 0;
+  color: rgb(153, 22, 88);
   font-style: italic;
   padding: 8px 3px;
-  font-size:medium;
+  font-size: medium;
 }
-h5{
+
+h5 {
   color: aliceblue;
   margin-top: 50px;
-} 
+}
+.social{
+  color:black;
+}
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .hero {
+    flex-direction: column; 
+    justify-content: center;
+    height: auto; 
+    margin: 16vh 10% 0;
+    gap: 0;
+  }
+
+  .hero img {
+    width: 250px; 
+    height: 250px;
+    margin: 20px 0 0; 
+  }
+
+  .content {
+    width: 80%; 
+    margin-left: 0; 
+    margin-top: -10px; 
+  }
+}
+
+@media (max-width: 768px) {
+  .hero img {
+    width: 200px;
+    height: 200px;
+    margin: 10px 0; 
+  }
+
+  .content {
+    width: 90%;
+    margin-top: -5px; 
+  }
+
+  h1 {
+    font-size: 30px; 
+  }
+
+  p {
+    font-size: 30px; 
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    margin: 16vh 5vh 0%;
+    gap: 5px; 
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  p {
+    font-size: 24px; 
+  }
+}

@@ -1,50 +1,55 @@
-.coitainer-edu{
+.coitainer-edu {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(117, 226, 150, 0.092);
     border-radius: 40px;
-    padding: 30px 35px;
-    
+    padding: 3px 35px;
     margin: 22px 30px;
 }
-.row{
+
+.row {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr; /* Default for larger screens */
+    gap: 20px; /* Add some space between columns */
 }
-.col{
+
+.col {
     padding: 10px 50px;
 }
-.col .title{
-    color:  rgb(153, 22, 88);
-    margin-bottom: 20px;
-    
+
+.col .title {
+    color: rgb(153, 22, 88);
+    margin-bottom: 20px; 
     padding: 0px 0px 20px 30px;
 }
-.col .contents{
-border-left: 2px solid rgb(30, 90, 55);
-border-top: 20px;
-margin-top: -15px;
 
+.col .contents {
+   border-left: 2px solid #74512D;
+   border-top: 20px;
+   margin-top: -15px;
+   margin-right: 15px;
 }
-.contents .box{
+
+.contents .box {
     position: relative;
     padding: 20px;
     border: 1px solid rgba(12, 37, 4, 0.1);
-    margin-left: 20px;
+    margin-left: 25px;
     cursor: pointer;
     transition: all 0.4s;
     border-radius: 30px;
     margin-bottom: 20px;
-    background-color: rgba(108, 216, 141, 0.092);
+    background-color: #d6c3c2;
     font-weight: 100;
     font-style: italic;
 }
-.contents .box:hover{
+
+.contents .box:hover {
     box-shadow: 0px 3px 12px 0px rgba(12, 37, 4, 0.1);
-    background-color: rgba(30, 77, 44, 0.092) ;
+    background-color: #c5b4b3;
 }
-.col .contents .box ::before{
+
+.col .contents .box::before {
     content: "";
     position: absolute;
     width: 16px;
@@ -56,10 +61,27 @@ margin-top: -15px;
     border: 2px solid transparent;
     margin-top: -5px;
 }
-.box h3{
+
+.box h3 {
+    margin-left: 3px;
     color: rgb(37, 18, 36);
 }
-.box h4{
-    color: rgb(170, 164, 164);
+
+.box h4 {
+    color: #795458;
     padding: 5px;
+    font-weight: 200;
 }
+
+
+@media screen and (max-width: 768px) {
+    .row {
+        grid-template-columns: 1fr; 
+    }
+
+    .col {
+        padding: 10px 20px;
+    }
+}
+
+

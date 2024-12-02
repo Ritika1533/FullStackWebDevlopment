@@ -22,9 +22,9 @@ export const EducationData = [
 export const ExperienceData = [
 	{
 		role: "Web Developer Intern",
-		organisation: "CyberSocial",
-		duration: "May 2024-Present",
-		work: "Working as a Backend Developer specializing in REST APIs with Node.js and Express.js, skilled in MongoDB integration and JWT authentication.",
+		organisation: "DeWall Ads",
+		duration: "September 2024-October 2024",
+		work: "Assisting in website development and maintenance, collaborating with the team to ensure functionality and performance.",
 	},
 	{
 		role: "Fundraising Coordinator",

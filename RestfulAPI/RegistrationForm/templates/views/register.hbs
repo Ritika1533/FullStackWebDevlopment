@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Registration Form In HTML and CSS</title>
+
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+			crossorigin="anonymous"
+		/>
+		<script
+			type="module"
+			src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+		></script>
+		
+		<style>@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+:root{
+	--white: #fff;
+	--text-clr: #000024;
+	--primary: #e50914;
+	--secondary: #c0c1d2;
+	--input-bg: #f1f1ff;
+	--btn-hvr: #1a0065;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	outline: none;
+	font-family: 'Open Sans', sans-serif;
+}
+
+body{
+	background: var(--primary);
+	font-size: 14px;
+	color: var(--text-clr);
+}
+
+.wrapper{
+	width: 100%;
+	padding: 0 10px;
+	margin-top: 20px;
+	display: flex;
+	justify-content: center;
+}
+
+.r_form_wrap{
+	width: 500px;
+	max-width: 100%;
+}
+
+.r_form_wrap .title{
+	padding: 25px;
+	background: var(--white);
+	border-radius: 3px;
+	margin-bottom: 20px;
+}
+
+.r_form_wrap .title p{
+	font-size: 25px;
+	text-align: center;
+}
+
+.r_form{
+	padding: 40px;
+	border-radius: 3px;
+	background: var(--white);
+}
+
+.r_form .input_wrap{
+	width: 100%;
+	margin-bottom: 25px;
+}
+
+.r_form .input_wrap label{
+	display: block;
+	margin-bottom: 5px;
+}
+
+.r_form .input_wrap .input_item{
+	position: relative;
+	width: 100%;
+}
+
+.r_form .input_wrap .input_item .input{
+	width: 100%;
+	border-radius: 3px;
+	height: 40px;
+	border: 2px solid var(--input-bg);
+	background: var(--input-bg);
+	padding: 10px 20px;
+	padding-left: 50px;
+	transition: 0.5s ease;
+	color: var(--secondary);
+}
+
+.r_form .input_wrap .input_item .input:focus{
+	border-color: var(--primary);
+}
+
+.r_form .input_wrap .input_item .icon{
+	position: absolute;
+	top: 12px;
+	left: 20px;
+	color: var(--secondary);
+	font-size: 16px;
+}
+
+.r_form .input_wrap .input_radio{
+	display: flex;
+}
+
+.r_form .input_wrap .input_radio .input_radio_item{
+	background: var(--input-bg);
+	margin-right: 25px;
+	padding: 20px;
+	border-radius: 3px;
+	position: relative;
+	width: 100px;
+}
+
+.r_form .input_wrap .input_radio .input_radio_item .radio_mark{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: var(--secondary);
+	border: 2px solid transparent;
+	border-radius: 3px;
+	margin: 0;
+	cursor: pointer;
+	transition: 0.5s ease;
+}
+
+.r_form .input_wrap .input_radio .input_radio_item .radio_mark .i{
+	margin-right: 5px;
+	display: inline-block;
+}
+
+.r_form .input_wrap .input_radio .input_radio_item .radio{
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+}
+
+.r_form .input_wrap .input_radio .input_radio_item .radio:checked ~ .radio_mark{
+	color: var(--primary);
+	border-color: var(--primary);
+}
+
+button{
+	width: 100%;
+	border: 0;
+	background: var(--btn-hvr);
+	padding: 10px;
+	border-radius: 3px;
+	height: 40px;
+	color: var(--white);
+	cursor: pointer;
+	transition: 0.5s ease;
+}
+
+button:hover{
+	background: var(--primary);
+}</style>
+	</head>
+	<body>
+		{{>navbar}}
+
+		<div class="wrapper">
+			<div class="r_form_wrap">
+				<div class="title">
+					<p>Registration Form</p>
+				</div>
+
+				<div class="r_form">
+					<form action="/register" method="post">
+						<div class="input_wrap">
+							<label for="yourname">Your Name</label>
+							<div class="input_item">
+								<span class="icon">
+									<ion-icon name="person-sharp"></ion-icon>
+								</span>
+								<input
+									type="text"
+									name="name"
+									class="input"
+									id="yourname"
+								/>
+							</div>
+						</div>
+						<div class="input_wrap">
+							<label for="emailaddress">Email Address</label>
+							<div class="input_item">
+								<span class="icon">
+									<ion-icon name="mail-sharp"></ion-icon>
+								</span>
+								<input
+									type="text"
+									name="email"
+									class="input"
+									id="emailaddress"
+								/>
+							</div>
+						</div>
+						<div class="input_wrap">
+							<label for="password">Password</label>
+							<div class="input_item">
+								<span class="icon">
+									<ion-icon name="key-sharp"></ion-icon>
+								</span>
+								<input
+									type="password"
+									name="password"
+									class="input"
+									id="password"
+								/>
+							</div>
+						</div>
+						<div class="input_wrap">
+							<label for="confirmpassword">Confirm Password</label>
+							<div class="input_item">
+								<span class="icon">
+									<ion-icon name="key-sharp"></ion-icon>
+								</span>
+								<input
+									type="password"
+									name="confirmpassword"
+									class="input"
+									id="confirmpassword"
+								/>
+							</div>
+						</div>
+						<div class="input_wrap">
+							<label for="phone">Phone</label>
+							<div class="input_item">
+								<span class="icon">
+									<ion-icon name="call-sharp"></ion-icon>
+								</span>
+								<input type="number" name="phone" class="input" id="phone" />
+							</div>
+						</div>
+						<div class="input_wrap">
+							<label for="yourage">Your Age</label>
+							<div class="input_item">
+								<span class="icon">
+									<ion-icon name="person-sharp"></ion-icon>
+								</span>
+								<input
+									type="number"
+									name="age"
+									class="input"
+									id="yourage"
+								/>
+							</div>
+						</div>
+						<div class="input_wrap">
+							<label>Gender</label>
+							<div class="input_radio">
+								<div class="input_radio_item">
+									<input
+										type="radio"
+										id="male"
+										name="gender"
+										class="radio"
+										value="male"
+									/>
+									<label for="male" class="radio_mark">
+										<ion-icon class="i" name="male-sharp"></ion-icon>
+										Male</label
+									>
+								</div>
+								<div class="input_radio_item">
+									<input
+										type="radio"
+										id="female"
+										name="gender"
+										class="radio"
+										value="female"
+									/>
+									<label for="female" class="radio_mark">
+										<ion-icon class="i" name="female-sharp"></ion-icon>
+										Female</label
+									>
+								</div>
+								<div class="input_radio_item">
+									<input
+										type="radio"
+										id="others"
+										name="gender"
+										class="radio"
+										value="others"
+									/>
+									<label for="others" class="radio_mark">
+										<ion-icon class="i" name="male-female-sharp"></ion-icon>
+										Others</label
+									>
+								</div>
+							</div>
+						</div>
+
+						<button>Register Now</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

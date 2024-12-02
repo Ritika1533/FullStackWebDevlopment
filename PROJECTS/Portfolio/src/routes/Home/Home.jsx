@@ -1,13 +1,19 @@
 import React from "react";
 import Navbar from "../../Components/Navbar/Navbar";
+import IntroText from "../../Components/Intro/IntroText";
+import "./home.css";
 
-import IntroText from "./IntroText";
 const Home = () => {
 	return (
-		<>
+		<div className="home">
 			<Navbar />
 			<IntroText />
-		</>
+			{/* <Aboutme />
+			<Edu />
+			<Skillsection />
+			<Proj />
+			<ContactForm /> */}
+		</div>
 	);
 };
 
