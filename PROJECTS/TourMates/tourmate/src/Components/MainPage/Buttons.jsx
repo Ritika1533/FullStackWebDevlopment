@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Favourites from "./Favourites";
 import Upcoming from "../Upcoming Booking/Upcoming";
+import Allbookings from "../Upcoming Booking/Allbookings";
 function Buttons() {
 	const [active, setActive] = useState(null);
 	return (
@@ -35,7 +36,7 @@ function Buttons() {
 						<Upcoming />
 					</>
 				)}
-				{active === "booking" && <Upcoming />}
+				{active === "booking" && <Allbookings />}
 				{active === "upcoming" && <Favourites />}
 			</div>
 		</>
