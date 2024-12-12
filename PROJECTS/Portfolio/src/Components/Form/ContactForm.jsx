@@ -17,7 +17,7 @@ function ContactForm() {
 					>
 						<MdAttachEmail size={40} style={{ color: "#777" }} />
 						<a href="mailto:ritikakes33@gmail.com" style={{ color: "#777" }}>
-							ritikakes33@gmail.com
+							Email
 						</a>
 					</button>
 					<button

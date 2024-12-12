@@ -4,6 +4,9 @@
     margin-top: 30px;
     margin-bottom: 22px;
 }
+.aboutme p {
+    line-height: 1.2; /* Adds spacing between lines in paragraphs */
+  }
 .about-content{
     /* background-color: #E4E0E1; */
     background-color: #d8c9c8;

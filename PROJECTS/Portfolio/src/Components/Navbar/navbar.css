@@ -95,7 +95,7 @@ ul{
 } 
 
 
-@media screen and (max-width:1040px){
+/* @media screen and (max-width:1040px){
     .navMenu{
         flex-direction: column;
         justify-content: center;
@@ -126,4 +126,44 @@ ul{
         display: initial;
     }
 
+} */
+@media screen and (max-width: 1040px) {
+    .header {
+        height: 10vh; /* Reduce navbar height on mobile */
+    }
+
+    .navMenu {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: calc(100vh - 10vh); /* Adjust menu height according to the reduced navbar height */
+        background: #b49f9d;
+        position: absolute;
+        top: 0;
+        left: 100%;
+        z-index: -3;
+        transition: 0.5s;
+        width: 100%;
+    }
+
+    .navMenu.active {
+        left: 0;
+    }
+
+    .navMenu li {
+        padding: 1rem 0;
+    }
+
+    .navMenu li a {
+        font-size: 2rem;
+        color: white;
+    }
+
+    a .res-btn {
+        margin-top: 12px;
+    }
+
+    .hamburger {
+        display: initial;
+    }
 }

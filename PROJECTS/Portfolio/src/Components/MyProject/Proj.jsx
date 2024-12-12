@@ -21,7 +21,7 @@ function Proj() {
 						<div className="portfolio_item-cta">
 							<button className="res-bt">
 								<a href={item.link} target="_blank" rel="noopener noreferrer">
-									Github
+									{item.linkg}
 								</a>
 							</button>
 						</div>

@@ -35,7 +35,8 @@ const skillsData = [
 	},
 	{
 		title: "SQL",
-		imgSrc: "https://i.pngimg.me/thumb/f/720/5855662718320640.jpg",
+		imgSrc:
+			"https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Sql_data_base_with_logo.svg/2560px-Sql_data_base_with_logo.svg.png",
 	},
 	{
 		title: "C",

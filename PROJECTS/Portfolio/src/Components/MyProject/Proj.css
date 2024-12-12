@@ -28,7 +28,9 @@
   gap: 2.7rem;
   width: 100%; 
 }
-
+/* .portfolio_item:last-child {
+  grid-column: 2; 
+} */
 .portfolio_item {
   background: rgba(138, 103, 103, 0.342);
   box-sizing: border-box;

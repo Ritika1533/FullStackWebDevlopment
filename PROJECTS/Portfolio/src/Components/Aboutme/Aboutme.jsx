@@ -23,8 +23,8 @@ function Aboutme() {
 							>
 								Ritika Keshri
 							</span>
-							, originally from Deoghar, Jharkhand. Currently, I'm residing in
-							Kolkata, where I'm pursuing my graduation.
+							{"  "}, originally from Deoghar, Jharkhand. Currently, I'm
+							residing in Kolkata, where I'm pursuing my graduation.
 						</p>
 						<p>
 							Currently in the final year of a Bachelor of Technology in
@@ -33,7 +33,7 @@ function Aboutme() {
 							<span style={colorCss} className="symbol">
 								{" "}
 								CGPA of 8.43
-							</span>
+							</span>{" "}
 							, with graduation expected in 2025.
 						</p>
 						<p>
@@ -50,24 +50,19 @@ function Aboutme() {
 							</span>
 						</p>
 						<p>
-							<span style={colorCss}>Proficient in C++</span> with a strong
-							grasp of programming basics, including object-oriented programming
-							and data structures, enabling effective problem-solving and
-							solution development.
+							<span style={colorCss}>Proficient in C++</span> with strong OOP
+							and data structures knowledge, solving
+							<span style={colorCss}> 300+</span> problems on{" "}
+							<span style={colorCss}>LeetCode </span> and{" "}
+							<span style={colorCss}> GFG.</span>
 						</p>
 						<p>
-							Knowledgeable in{" "}
-							<span style={colorCss} className="symbol">
-								MongoDB and MySQL
-							</span>
-							, as well as{" "}
-							<span style={colorCss} className="symbol">
-								HTML, CSS, and JavaScript
-							</span>{" "}
-							. Familiar with{" "}
-							<span style={colorCss} className="symbol">
-								Bootstrap and Git.
-							</span>
+							Knowledgeable in <span style={colorCss}>MongoDB </span> and{" "}
+							<span style={colorCss}> MySQL</span>, as well as{" "}
+							<span style={colorCss}>Html, Css</span> and{" "}
+							<span style={colorCss}> Javascript.</span>
+							Familiar with <span style={colorCss}>Bootstrap </span> and{" "}
+							<span style={colorCss}> Git.</span>
 						</p>
 						<p>
 							Interested in{" "}
